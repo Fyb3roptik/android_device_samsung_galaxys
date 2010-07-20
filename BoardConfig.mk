@@ -24,7 +24,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/htc/espresso/BoardConfigVendor.mk
+-include vendor/samsung/galaxys/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 
