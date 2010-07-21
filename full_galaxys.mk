@@ -121,6 +121,9 @@ PRODUCT_COPY_FILES += \
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.startheapsize=8m \
+    dalvik.vm.heapsize=48m
 
 # GalaxyS uses high-density artwork where available
 PRODUCT_LOCALES := hdpi
