@@ -7,6 +7,14 @@ PRODUCT_DEVICE := SGH-T959
 PRODUCT_MODEL := SGH-T959
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
+
+# Kernel Targets
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifeq ($(TARGET_KERNEL_CONFIG),)
+TARGET_PREBUILT_KERNEL := device/samsung/galaxys/kernel
+endif # TARGET_KERNEL_CONFIG
+endif # TARGET_PREBUILT_KERNEL
+
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
