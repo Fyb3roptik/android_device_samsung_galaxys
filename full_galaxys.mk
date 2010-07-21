@@ -117,7 +117,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/galaxys/prebuilt/ril/drexe:system/bin/drexe \
     device/samsung/galaxys/prebuilt/ril/efsd:system/bin/efsd \
     device/samsung/galaxys/prebuilt/ril/efsd30:system/bin/efsd30 \
-   device/samsung/galaxys/prebuilt/ril/rilclient-test:system/bin/rilclient-test
+    device/samsung/galaxys/prebuilt/ril/rilclient-test:system/bin/rilclient-test
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
