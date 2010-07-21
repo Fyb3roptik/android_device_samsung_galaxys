@@ -27,9 +27,7 @@ USE_CAMERA_STUB := true
 -include vendor/samsung/galaxys/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-
 TARGET_NO_RECOVERY := true
-
 TARGET_NO_KERNEL := true
 
 TARGET_BOARD_PLATFORM := s5pc110
@@ -39,6 +37,16 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 
 TARGET_BOOTLOADER_BOARD_NAME := galaxys
+
+# Wifi related defines
+BOARD_WPA_SUPPLICANT_DRIVER := 
+WPA_SUPPLICANT_VERSION      := 
+BOARD_WLAN_DEVICE           := 
+WIFI_DRIVER_MODULE_PATH     := ""
+WIFI_DRIVER_FW_STA_PATH     := ""
+WIFI_DRIVER_FW_AP_PATH      := ""
+WIFI_DRIVER_MODULE_ARG      := ""
+WIFI_DRIVER_MODULE_NAME     := ""
 
 BOARD_USES_GENERIC_AUDIO := false
 
